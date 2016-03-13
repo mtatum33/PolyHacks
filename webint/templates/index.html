@@ -3,10 +3,10 @@
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
 	{% block body %}
-	<img src="output.jpg">
 	<h1>Sensor Information:</h1>
-	<p>	Temperature: {{ temperature }}<br>
-		Relative Humidity: {{ moisture }}<br>
+	<p>	Time: {{ time }} UTC<br>
+		Temperature: {{ temperature }} C<br>
+		Relative Humidity: {{ humidity }} %<br>
 		Light: {{ light }}<br>
 		pH: {{ pH }} <br><br>
 		<a href="#"></a>
